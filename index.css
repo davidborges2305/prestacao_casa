@@ -1,0 +1,38 @@
+h2 {
+    text-align: center;
+}
+label {
+    width: 300px;
+    display: inline-block;
+}
+input {
+    text-align: center;
+    width: 220px;
+}
+
+.content {
+    width: 800px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+form{
+    margin-left: 15%;
+    margin-top: 5%;
+
+}
+button{
+    width: 350px;
+    margin-left: 30%;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #007bff;
+    background-color: #007bff;
+    color: #fff; 
+    
+}
+button.btn-disabled{
+    border: 2px solid #9a9a9a;
+    background-color: #9a9a9a;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div class="content">
+        <h2>Controle de quitação da casa </h2>
+        <form>
+            <label for="valorTotalCasa">Valor da Casa</label>
+            <input id="valorTotalCasa" type="number" onkeyup="onKeyPressValidaCampos()" />
+            <br>
+            <br>
+            <label for="valorDaParcela">Valor da Parcela mensal</label>
+            <input id="valorDaParcela" type="number" onkeyup="onKeyPressValidaCampos()"  />
+            <br>
+            <br>
+            <label for="numeroDeParcelas">Número de Parcelas para quitação</label>
+            <input id="numeroDeParcelas" type="number" onkeyup="onKeyPressValidaCampos()" onchange="onKeyPressValidaCampos()" />
+            <br>
+            <br>
+            <label for="inicioPagamento">Data inicial do Pagamento</label>
+            <input id="inicioPagamento" type="date" onkeyup="onKeyPressValidaCampos()" onchange="onKeyPressValidaCampos()" />
+
+            <br>
+            <br>
+            <label for="mesCorrente">Mês atual</label>
+            <input id="mesCorrente" type="date"/>
+        </form>
+        <br>
+        <button class="btn-disabled" id="btnCalcularParcelas" onclick="onClickBtnCalcularParcelas()" disabled="true">
+            Calcular Parcelas
+        </button>
+</div>
+
+<div class="content">
+    <form class="segundoFormulario">
+        <div>
+            <label for="mesesPagos">
+                Numero de Parcelas pagas: 
+            </label>
+            <input id="mesesPagos" disabled="true">
+        </div>
+        <br>
+        <div>
+            <label for="mesesRestantes">
+                Numero de Parcelas a pagar: 
+            </label>
+            <input id="mesesRestantes" disabled="true">
+        </div>
+        <br>
+        <div>
+            <label for="saldoPago">
+                Saldo Quitado: 
+            </label>
+            <input id="saldoPago" disabled="true">
+        </div>
+        <br>
+        <div>
+            <label for="saldoDevedor">
+                Saldo Devedor: 
+            </label>
+            <input id="saldoDevedor" disabled="true">
+    
+        </div>
+        
+       
+        
+    </form>
+
+</div>
+
+</body>
+<script src="index.js">
+    
+</script>
+</html>
